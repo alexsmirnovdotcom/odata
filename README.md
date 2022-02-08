@@ -198,7 +198,7 @@ $response = $odata->resource('Document_СчетНаОплатуПокупате�
 
 
 * `\Alexsmirnovdotcom\Odata\Exceptions\Service\InvalidParameterException` будет выброшено если в методы:
-`get()`, `update()`, `markDeleted()`, `forceDelete()` или во время запроса если не указан URI базы.  
+`get()`, `update()`, `markDeleted()`, `forceDelete()` передан GUID в неверном формате, или во время запроса если не указан URI базы.  
 
 
 * `\Alexsmirnovdotcom\Odata\Exceptions\Service\IllegalKeyOffsetException` будет выброшено при попытке вызова метода `Alexsmirnovdotcom\Odata\Response->getBody($key)` с отсутствующим в массиве ключом `$key`.  
