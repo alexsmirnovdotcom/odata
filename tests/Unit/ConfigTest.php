@@ -87,11 +87,10 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
         $additionalClientParameter = ['timeout' => 10];
         $auth = ['login', 'password'];
 
-        $expected = [
+        $expected = array_merge([
             'auth' => $auth,
             'headers' => array_merge($defaultHeaders, [$additionalHeader => $additionalHeaderValue]),
-            ...$additionalClientParameter
-        ];
+        ], $additionalClientParameter);
 
         $config = new Config();
         $config
